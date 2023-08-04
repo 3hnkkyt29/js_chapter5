@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+}
+
+#menu {
+  display: grid;
+  /*要素を格子状に並べる*/
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-columns*/
+  max-width: 1020px;
+  margin: auto;
+  padding: 30px;
+}
+
+img {
+  aspect-ratio: 4 / 3;
+  /*https://developer.mozilla.org/ja/docs/Web/CSS/aspect-ratio*/
+  object-fit: cover;
+}
+h1 {
+  margin: 30px 0;
+  font-size: 40px;
+}
+h2 {
+  margin-top: 6px;
+}
