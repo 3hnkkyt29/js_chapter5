@@ -1,4 +1,19 @@
 const menu = document.querySelector('#menu');
+const lists = [
+    'strawberry.jpg',
+    'lime.jpg',
+    'mango.jpg',
+    'lemon.jpg',
+    'fig.jpg',
+    'apple.jpg',
+    ];
+console.log(lists);
+// 5-4
+/*
+配列の書き方は
+const 定数名 = [要素１, 要素２, 要素３, 要素４, 要素５];
+*/
+
 const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
 // menu.textContent = content;
 menu.insertAdjacentHTML('beforeend', content);
