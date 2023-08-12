@@ -19,16 +19,16 @@ const 定数名 = [要素１, 要素２, 要素３, 要素４, 要素５];
 const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
 って書くのと同じ
 */
-const content = `<div><img src="images/${lists[0]}" alt=""></div>
-<div><img src="images/${lists[1]}" alt=""></div>
-<div><img src="images/${lists[2]}" alt=""></div>
-<div><img src="images/${lists[3]}" alt=""></div>
-<div><img src="images/${lists[4]}" alt=""></div>
-<div><img src="images/${lists[5]}" alt=""></div>
-`;
+// const content = `<div><img src="images/${lists[0]}" alt=""></div>
+// <div><img src="images/${lists[1]}" alt=""></div>
+// <div><img src="images/${lists[2]}" alt=""></div>
+// <div><img src="images/${lists[3]}" alt=""></div>
+// <div><img src="images/${lists[4]}" alt=""></div>
+// <div><img src="images/${lists[5]}" alt=""></div>
+// `;
 
-// menu.textContent = content;
-menu.insertAdjacentHTML('beforeend', content);
+// // menu.textContent = content;
+// menu.insertAdjacentHTML('beforeend', content);
 /*
 要素.insertAdjacentHTML(`挿入位置`, 挿入内容);
 挿入位置は以下の4つ
@@ -53,6 +53,13 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
     繰り返し実行する処理
 }
 */
-for(let i = 1; i <= 10; i++){
-    console.log(`${i}回目のこんにちは！`);
+// 5-5
+// for(let i = 1; i <= 10; i++){
+//     console.log(`${i}回目のこんにちは！`);
+// }
+
+// 5-6
+for (let i = 0; i < 6; i++){
+    const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+    menu.insertAdjustHTML('beforeend', content);
 }
