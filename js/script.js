@@ -63,3 +63,4 @@ for (let i = 0; i < 6; i++){
     const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
     menu.insertAdjustHTML('beforeend', content);
 }
+// ↑これを入れると画像が消える、、
