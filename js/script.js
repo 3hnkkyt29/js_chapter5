@@ -59,8 +59,14 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
 // }
 
 // 5-6
-for (let i = 0; i < 6; i++){
-    const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
-    menu.insertAdjustHTML('beforeend', content);
-}
+// for (let i = 0; i < 6; i++){
+//     const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+//     menu.insertAdjustHTML('beforeend', content);
+// }
 // ↑これを入れると画像が消える、、
+// Adjacentをスペルミスしてた、、
+
+for(let i = 0; i < lists.length; i++){
+    const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+    menu.insertAdjacentHTML('beforeend', content);
+}
