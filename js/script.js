@@ -70,3 +70,16 @@ for(let i = 0; i < lists.length; i++){
     const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
     menu.insertAdjacentHTML('beforeend', content);
 }
+
+// 5-7
+/*
+「let」で再代入ができる
+例
+let letName = 'ユウタ';
+console.log(letname);
+→「ユウタ」が出力される
+let letName = 'ユウタ';
+letName = 'フウガ';
+console.log(letname);
+→「フウガ」が出力されて「ユウタ」は削除される
+*/
