@@ -1,31 +1,56 @@
-body {
-  text-align: center;
-  font-family: 'Kiwi Maru', serif;
-}
+/*body {*/
+/*  text-align: center;*/
+/*  font-family: 'Kiwi Maru', serif;*/
+/*}*/
 
-#menu {
-  display: grid;
+/*#menu {*/
+/*  display: grid;*/
   /*要素を格子状に並べる*/
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/*  gap: 30px;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
   /*https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-columns*/
-  max-width: 1020px;
-  margin: auto;
-  padding: 30px;
-}
+/*  max-width: 1020px;*/
+/*  margin: auto;*/
+/*  padding: 30px;*/
+/*}*/
 
-img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+/*img {*/
+/*  width: 100%;*/
+/*  aspect-ratio: 4 / 3;*/
   /*https://developer.mozilla.org/ja/docs/Web/CSS/aspect-ratio*/
-  object-fit: cover;
-}
-h1 {
-  margin: 30px 0;
-  font-size: 50px;
-}
-h2 {
-  margin-top: 8px;
-}
+/*  object-fit: cover;*/
+/*}*/
+/*h1 {*/
+/*  margin: 30px 0;*/
+/*  font-size: 50px;*/
+/*}*/
+/*h2 {*/
+/*  margin-top: 8px;*/
+/*}*/
 
 /*画像が縦並びになる！*/
+/*以下、コピペ*/
+body {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+}
+#menu {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1020px;
+    margin: auto;
+    padding: 30px;
+}
+img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+h1 {
+    margin: 30px 0;
+    font-size: 40px;
+}
+h2 {
+    margin-top: 6px;
+}
