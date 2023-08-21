@@ -1,4 +1,13 @@
 const menu = document.querySelector('#menu');
+
+// 5-8
+const strawberry = {
+    name: 'イチゴ',
+    img:'strawberry.jpg',
+    price:450,
+};
+console.log(strawberry);
+
 const lists = [
     'strawberry.jpg',
     'lime.jpg',
