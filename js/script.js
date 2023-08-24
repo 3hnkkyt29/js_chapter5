@@ -6,7 +6,8 @@ const strawberry = {
     img:'strawberry.jpg',
     price:450,
 };
-console.log(strawberry);
+console.log(strawberry.name);
+console.log(strawberry['img']);
 
 const lists = [
     'strawberry.jpg',
@@ -99,4 +100,9 @@ const 定数名 = {
     キー : 値
 };
 プロパティが複数ある場合は、値の後に「,」をつける
+*/
+
+// 5-9
+/*
+
 */
