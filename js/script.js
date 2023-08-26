@@ -1,22 +1,58 @@
 const menu = document.querySelector('#menu');
 
 // 5-8
-const strawberry = {
-    name: 'イチゴ',
-    img:'strawberry.jpg',
-    price:450,
-};
-console.log(strawberry.name);
-console.log(strawberry['img']);
+// const strawberry = {
+//     name: 'イチゴ',
+//     img:'strawberry.jpg',
+//     price:450,
+// };
+// console.log(strawberry.name);
+// console.log(strawberry['img']);
 
+// const lists = [
+//     'strawberry.jpg',
+//     'lime.jpg',
+//     'mango.jpg',
+//     'lemon.jpg',
+//     'fig.jpg',
+//     'apple.jpg',
+//     ];
+
+// 5-10
 const lists = [
-    'strawberry.jpg',
-    'lime.jpg',
-    'mango.jpg',
-    'lemon.jpg',
-    'fig.jpg',
-    'apple.jpg',
+    {
+        name: 'イチゴ',
+        img: 'strawberry.jpg',
+        price: 400,
+    },
+    {
+        name: 'ライム',
+        img: 'lime.jpg',
+        price: 400,
+    },
+    {
+        name: 'マンゴー',
+        img: 'mango.jpg',
+        price: 400,
+    },
+    {
+        name: 'レモン',
+        img: 'lemon.jpg',
+        price: 400,
+    },
+    {
+        name: 'イチジク',
+        img: 'fig.jpg',
+        price: 400,
+    },
+    {
+        name: 'リンゴ',
+        img: 'apple.jpg',
+        price: 400,
+    },
     ];
+    console.log(lists[0].name);
+
 // console.log(lists[1]);
 // 5-4
 /*
