@@ -23,7 +23,7 @@ const lists = [
     {
         name: 'イチゴ',
         img: 'strawberry.jpg',
-        price: 400,
+        price: 450,
     },
     {
         name: 'ライム',
@@ -33,7 +33,7 @@ const lists = [
     {
         name: 'マンゴー',
         img: 'mango.jpg',
-        price: 400,
+        price: 500,
     },
     {
         name: 'レモン',
@@ -43,7 +43,7 @@ const lists = [
     {
         name: 'イチジク',
         img: 'fig.jpg',
-        price: 400,
+        price: 500,
     },
     {
         name: 'リンゴ',
@@ -51,7 +51,7 @@ const lists = [
         price: 400,
     },
     ];
-    console.log(lists[0].name);
+    // console.log(lists[0].name);
     // 画像が出なくなる
 
 // console.log(lists[1]);
@@ -114,7 +114,7 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
 // Adjacentをスペルミスしてた、、
 
 for(let i = 0; i < lists.length; i++){
-    const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+    const content = `<div><img src="images/${lists[i].img}" alt=""><h2>${lists[i].name}</h2><p>${lists[i].price}円</p></div>`;
     menu.insertAdjacentHTML('beforeend', content);
 }
 
