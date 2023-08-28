@@ -114,7 +114,11 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
 // Adjacentをスペルミスしてた、、
 
 for(let i = 0; i < lists.length; i++){
-    const content = `<div><img src="images/${lists[i].img}" alt=""><h2>${lists[i].name}</h2><p>${lists[i].price}円</p></div>`;
+    const name = lists[i].name;
+    const price = lists[i].price;
+    const img = lists[i].img;
+    
+    const content = `<div><img src="images/${img}" alt=""><h2>${name}</h2><p>${price}円</p></div>`;
     menu.insertAdjacentHTML('beforeend', content);
 }
 
