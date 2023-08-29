@@ -117,9 +117,10 @@ for(let i = 0; i < lists.length; i++){
     const name = lists[i].name;
     const price = lists[i].price;
     const img = lists[i].img;
-    
+
     const content = `<div><img src="images/${img}" alt=""><h2>${name}</h2><p>${price}円</p></div>`;
     menu.insertAdjacentHTML('beforeend', content);
+    // index.html内で「menu」タグで指定したもの
 }
 
 // 5-7
