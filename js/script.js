@@ -51,21 +51,13 @@ const lists = [
         price: 400,
     },
     ];
-    // console.log(lists[0].name);
-    // 画像が出なくなる
 
-// console.log(lists[1]);
 // 5-4
 /*
 配列の書き方は
 const 定数名 = [要素１, 要素２, 要素３, 要素４, 要素５];
 */
 
-/*
-22行目は
-const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
-って書くのと同じ
-*/
 // const content = `<div><img src="images/${lists[0]}" alt=""></div>
 // <div><img src="images/${lists[1]}" alt=""></div>
 // <div><img src="images/${lists[2]}" alt=""></div>
@@ -110,8 +102,7 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
 //     const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
 //     menu.insertAdjustHTML('beforeend', content);
 // }
-// ↑これを入れると画像が消える、、
-// Adjacentをスペルミスしてた、、
+
 
 for(let i = 0; i < lists.length; i++){
     const {name, img, price } = lists[i]
