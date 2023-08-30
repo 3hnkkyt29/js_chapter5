@@ -114,14 +114,27 @@ for(初回に実行する処理; 繰り返し条件; 各繰り返し後の処理
 // Adjacentをスペルミスしてた、、
 
 for(let i = 0; i < lists.length; i++){
-    const name = lists[i].name;
-    const price = lists[i].price;
-    const img = lists[i].img;
+    const {name, img, price } = lists[i]
+    // 上は、以下を書き換えたもの
+    // const name = lists[i].name;
+    // const price = lists[i].price;
+    // const img = lists[i].img;
+
 
     const content = `<div><img src="images/${img}" alt=""><h2>${name}</h2><p>${price}円</p></div>`;
     menu.insertAdjacentHTML('beforeend', content);
-    // index.html内で「menu」タグで指定したもの
+
 }
+// 5-12
+/*
+分割代入とは
+const オブジェクト名 = {
+    キー1: 値1,
+    キー2: 値2,
+    キー3: 値3,
+};
+const { キー1, キー2, キー3 } = オブジェクト名;
+*/
 
 // 5-7
 /*
