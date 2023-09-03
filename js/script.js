@@ -50,6 +50,11 @@ const lists = [
         img: 'apple.jpg',
         price: 400,
     },
+    {
+        name: 'ショートケーキ',
+        img: 'ショートケーキ.png',
+        price: 400,
+    },
     ];
 
 // 5-4
